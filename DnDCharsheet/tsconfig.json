@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "C:\\Users\\Richard\\source\\repos\\DnDCharsheet\\DnDCharsheet\\js_output"
+  },
+  "compileOnSave": true,
+  "include": [
+    "./ts/*",
+    "./ts/**/*"
+  ]
+}
