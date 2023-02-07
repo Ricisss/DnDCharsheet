@@ -3,19 +3,125 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script data-main="http://localhost:8080/main.js" src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <script data-main="main.js" src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8" />
     <title></title>
 </head>
 <body>
 
+    <div class="main-panel row">
+        <div class="panel panel-1 column">
+
+            <div class="character column">
+                <div class="name row">
+                    <div class="bordered backgrounded"> Jméno: </div>
+                    <input id="name" class="bordered " value="Riči">
+                </div>
+                <div class="class row">
+                    <div class="bordered backgrounded"> Povolání: </div>
+                    <input id="class" class="bordered " value="Klerik">
+                </div>
+            </div>
+
+            <div class="stats row">
+                <div class="stats-stats">
+                    <div class="stat row">
+                        <div class="stat-name bordered backgrounded"> STR </div>
+                        <input class="stat-value bordered" value="11">
+                        <input class="stat-modifier bordered" value="0">
+                    </div>
+                    <div class="stat row">
+                        <div class="stat-name bordered backgrounded"> DEX </div>
+                        <input class="stat-value bordered" value="8">
+                        <input class="stat-modifier bordered" value="-1">
+                    </div>
+                    <div class="stat row">
+                        <div class="stat-name bordered backgrounded"> CON </div>
+                        <input class="stat-value bordered" value="10">
+                        <input class="stat-modifier bordered" value="0">
+                    </div>
+                    <div class="stat row">
+                        <div class="stat-name bordered backgrounded"> INT </div>
+                        <input class="stat-value bordered" value="6">
+                        <input class="stat-modifier bordered disabled" value="-">
+                    </div>
+                    <div class="stat row">
+                        <div class="stat-name bordered backgrounded"> WIS </div>
+                        <input class="stat-value bordered" value="18">
+                        <input class="stat-modifier bordered" value="3">
+                    </div>
+                    <div class="stat row">
+                        <div class="stat-name bordered backgrounded"> CHA </div>
+                        <input class="stat-value bordered" value="9">
+                        <input class="stat-modifier bordered" value="0">
+                    </div>
+                </div>
+
+                <div class="stats-status">
+                    <div class="status row">
+                        <div class="status-life-current">
+                            <div class="bordered backgrounded-hp">Hp</div>
+                            <input id="hp-current" class="bordered" value="17">
+                        </div>
+                        <div class="status-life-max">
+                            <div class="bordered backgrounded-hp">Max</div>
+                            <input id="hp-max" class="bordered" value="17">
+                        </div>
+                    </div>
+                    <div class="status row">
+                        <div class="status-mana-current">
+                            <div class="bordered backgrounded-mp">Mp</div>
+                            <input id="mp-current" class="bordered" value="17">
+                        </div>
+                        <div class="status-life-max">
+                            <div class="bordered backgrounded-mp">Max</div>
+                            <input id="mp-max" class="bordered" value="30">
+                        </div>
+                    </div>
+
+                    <div class="stats-attacks row">
+                        <div class="attacks ">
+                            <div class="backgrounded"> Útoky </div>
+                            <div class="attacks-close bordered row">
+                                <div class="backgrounded-attack">Blízko</div>
+                                <input id="attacks-close" value="0">
+                            </div>
+                            <div class="attacks-ranged bordered row">
+                                <div class="backgrounded-attack">Dálka</div>
+                                <input id="attacks-ranged" value="-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="panel panel-2 column">
+
+            <div class="character row">
+                <div class="character-detail column">
+                    <div class="name row">
+                        <div class="bordered backgrounded"> Rasa: </div>
+                        <input id="race" class="bordered " value="Člověk">
+                    </div>
+                    <div class="class row">
+                        <div class="bordered backgrounded"> Přesv.: </div>
+                        <input id="aligment" class="bordered " value="Chaotické">
+                    </div>
+                </div>
+                <div class="character-level-wrapper column">
+                    <div class="bordered backgrounded"> Úroveň </div>
+                    <input id="level" class="bordered " value="4">
+                </div>
+            </div>
+
+    
+        </div>
+    </div>
+
+
+
 </body>
-
-
-
-
 </html>
-
-<script>
-    console.log("yay");
-</script>

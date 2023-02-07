@@ -1,0 +1,154 @@
+.column {
+    display: flex;
+    flex-flow: column;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+}
+
+body {
+
+
+
+    div, input {
+        font-family: Arial;
+        text-align: center;
+        padding: 2px;
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    .bordered {
+        border: 2px solid black;
+    }
+
+    .backgrounded {
+        background-color: black;
+        color: white;
+    }
+
+    .backgrounded-hp {
+        background-color: green;
+        color: white;
+    }
+
+    .backgrounded-mp {
+        background-color: blue;
+        color: white;
+    }
+
+    .backgrounded-attack {
+        background-color: red;
+        color: white;
+    }
+
+    .main-panel {
+
+        .panel {
+            width: 400px;
+        }
+
+        .panel-1 {
+
+            .character {
+
+                .name, .class {
+
+                    div {
+                        width: 100px;
+                    }
+                }
+
+                #name, #class {
+                    width: 350px;
+                }
+            }
+
+            .stats {
+
+                .stats-stats {
+                    width: 45%;
+
+                    .stat {
+                        height: 45px;
+
+                        div, input {
+                            width: 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .stats-status {
+                    width: 50%;
+
+                    .status, .stats-attacks {
+                        width: 100%;
+                        padding: 0px;
+                        height: 33%;
+
+                        .attacks-close, .attacks-ranged {
+                            padding: 0px;
+                            border-left-width: 4px;
+                            border-right-width: 4px;
+                        }
+                    }
+
+                    .status input {
+                        height: calc(100% - 30px);
+                        font-size: 30pt;
+                    }
+
+                    .stats-attacks {
+                        margin-top: 10px;
+                    }
+
+                    div, input {
+                        width: calc(100% - 3px);
+                        padding: 0px 4px 0px 4px;
+                    }
+                }
+            }
+        }
+
+        .panel-2 {
+            .character {
+
+                .name, .class {
+
+                    div {
+                        width: 100px;
+                    }
+                }
+
+                #name, #class {
+                    width: 150px;
+                }
+
+                .character-detail {
+                    width: 60%;
+
+                    div, input {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .character-level-wrapper {
+                    width: 30%;
+                    margin-left: 20px;
+                }
+
+                #level {
+                    height: 28px;
+                }
+            }
+        }
+    }
+}
